@@ -1,9 +1,13 @@
 <html>
 
 <head>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" type="text/css" href="fancyapps-fancyBox-18d1712/source/jquery.fancybox.css?v=2.1.5" media="screen"/>
+<script src="fancyapps-fancyBox-18d1712/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 <meta charset="utf-8">
 <title>君の名は。</title>
 <link rel="stylesheet" type="text/css" href="name.css">
+
 </head>
 
 <style>
@@ -15,8 +19,15 @@
     p.big{line-height:1.8;color:#33adff;}
 </style>
 
-<img src="image/your.jpg">
+
 <body>
+<a class="fancybox" rel="group" href="image/your.jpg"><img src="image/your.jpg" img src="image/name.jpg" width="100"/>
+
+<script>
+	$(document).ready(function(){
+		$(".fancybox").fancybox();
+	});
+</script>
 <h1>君の名は。</h1>
 <p class="big">《你的名字》（日語：君の名は。 -your name.-、英語：Your Name）是日本動畫家新海誠所執導；於2016年8月26日在日本公映的動畫電影。
 影片由田中將賀擔任人物設計、作畫導演為安藤雅司、劇中音樂則由搖滾樂團RADWIMPS負責製作，影星神木隆之介與上白石萌音分別為片中主角配音。</p>

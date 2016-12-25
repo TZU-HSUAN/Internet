@@ -2,6 +2,17 @@
 <meta charset="utf-8">
 <title>君の名は。</title>
 <link rel="stylesheet" type="text/css" href="name.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#hide").click(function(){
+			$("p").hide();
+		});
+		$("#show").click(function(){
+			$("p").show();
+		});
+	});
+</script>
 </head>
 
 <style>
@@ -25,7 +36,7 @@ p{color:#33001a;text-indent: 50px;font-size:20px;line-height:1.8;}
 <th><a href="plot.html" style="font-size:150%">劇情</a></th>
 <th><a href="character.html" style="font-size:150%">人物</a></th>
 <th><a href="creation.html" style="font-size:150%">創作</a></th>
-<th><a href="Scenes.html" style="font-size:150%">場景</a></th>
+<th><a href="scenes.html" style="font-size:150%">場景</a></th>
 </tr>
 </table>
 </div>
@@ -48,4 +59,6 @@ p{color:#33001a;text-indent: 50px;font-size:20px;line-height:1.8;}
 </b></p>
 
 <a href="#first">TOP</a>
+<button id="hide">Hide</button>
+<button id="show">More</button>
 </body>
